@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - Arara Azul ONG</title>
+    <meta name="description" content="Entre em contato com a Arara Azul ONG para dúvidas, sugestões ou parcerias." />
+    <link rel="stylesheet" href="CSS/style.css" /> 
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Arara Azul ONG</a></h1>
+            
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="cadastro.html">Seja um Voluntário</a></li>
+                    <li><a href="contato.html" aria-current="page">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contato-section">
+            <div class="container">
+                <div class="contato-bloco">
+                    <div class="contato-imagem">
+                        <img src="imagens/araracontato.jpg" alt="Arara Azul com telefone, simbolizando a comunicação da ONG." />
+                    </div>
+
+                    <div class="contato-formulario">
+                        <h2>Entre em contato conosco</h2>
+                        
+                        <div id="contato-mensagem-sucesso" class="alert-success">
+                            <h3>✅ Mensagem Recebida com Sucesso!</h3>
+                            <p>Agradecemos seu contato. Responderemos o mais breve possível!</p>
+                            <button onclick="location.reload()" class="button large-button" style="margin-top: 1rem;">Enviar outra mensagem</button>
+                        </div>
+
+                        <form id="contato-form" novalidate>
+                            <label for="nome">Seu Nome *</label> 
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+                            
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com"
+                                    title="Por favor, digite um endereço de e-mail válido." />
+
+                            <label for="assunto">Assunto *</label>
+                            <input type="text" id="assunto" name="assunto" required placeholder="Sobre o que deseja falar?"
+                                    title="Preencha o assunto da mensagem." />
+
+                            <label for="mensagem">Mensagem *</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Escreva sua mensagem aqui..."
+                                            title="Preencha o corpo da mensagem com no mínimo 10 caracteres." minlength="10"></textarea>
+
+                            <button type="submit" class="button large-button">Enviar</button>
+                        </form> 
+                        
+                        <div class="info-contato" style="margin-top: 2rem;">
+                            <p><strong>📧 Envie um e-mail:</strong> contato@araraazul.org.br</p>
+                            <p><strong>📱 WhatsApp:</strong> (11) 2405-3877</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Arara Azul ONG. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="javascript.js/script.js" defer></script>
+</body>
+</html>
